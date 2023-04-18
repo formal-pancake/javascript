@@ -26,14 +26,14 @@ Alternativement, vous pouver voir la version markdown
 
 Plusieurs exercices sont disponible dans le dossier [exercices](./exercises/).
 
-Tout les exercises sont exécutable via la commande
-
-## Exos
-
-Plusieurs exos sont disponible dans le dossier [exos](./exos/)
+Tout les exercises sont exécutable via la commande:
 
 ```
 > npm run exercise
 ```
+
+## Exos
+
+Plusieurs exos sont disponible dans le dossier [exos](./exos/)
 
 > _Ne pas oublier de faire `npm install` !_
