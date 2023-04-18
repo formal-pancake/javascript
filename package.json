@@ -1,11 +1,11 @@
 {
-  "name": "cedeg",
+  "name": "javascript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "exercise": "node ./javascript/exercises/index.js"
+    "exercise": "node ./exercises/index.js"
   },
   "author": "",
   "license": "ISC",
