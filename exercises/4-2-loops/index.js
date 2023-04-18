@@ -74,12 +74,19 @@ const numbers = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4016];
 
 let total = 0;
 numbers.forEach(function (number) {
-    console.log(`Total actuel: ${total}€`);
-    console.log(`Ajout de: ${number}€`);
+    console.log(`Total actuel: ${total}€, ajout de ${number}€, nouveau total: ${total + number}`);
+
+    // OR
+
+    /*
+    console.log(
+        `Total actuel: ${total}€,` +
+        `ajout de ${number}€,` +
+        ` nouveau total: ${total + number}`
+    );
+    */
 
     total += number;
-
-    console.log(`Nouveau total: ${total}€`);
 })
 
 
