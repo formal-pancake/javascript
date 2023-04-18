@@ -32,8 +32,8 @@ Tout les exercises sont exécutable via la commande:
 > npm run exercise
 ```
 
+> _Ne pas oublier de faire `npm install` !_
+
 ## Exos
 
 Plusieurs exos sont disponible dans le dossier [exos](./exos/)
-
-> _Ne pas oublier de faire `npm install` !_
