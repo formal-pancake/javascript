@@ -1,13 +1,15 @@
 //! N'UTILISE PAS IF OU ELSE
 
 
-// Crée une fonction appellé `isEvenorOdd` qui prend comme arguments une valeur.
+// Crée une fonction appellé `isEven` qui prend comme arguments une valeur.
 // La fonction retourne vrai si le nombre et paire et faux si il est impaire
 
 
 
 
-
+function isEven(number) {
+    return number % 2 == 0
+}
 
 
 
@@ -26,7 +28,9 @@
 
 
 
-
+function findLargest(nombre1, nombre2) {
+    return nombre1 > nombre2
+}
 
 
 
@@ -43,7 +47,9 @@
 // retourne faux si le nombre1 n'est pas équivalent/égal au nombre2
 
 
-
+function isEqual(nombre1, nombre2) {
+    return nombre1 == nombre2
+}
 
 
 
@@ -69,13 +75,13 @@ function checkVariableValue(variable, expectedValue) {
     return variable == expectedValue;
 }
 
-console.log(chalk.blue("Check fonction 'isEvenorOdd'..."));
+console.log(chalk.blue("Check fonction 'isEven'..."));
 try {
-    check(isEvenorOdd(4), "isEvenorOdd(4)", true);
-    check(isEvenorOdd(8), "isEvenorOdd(8)", true);
-    check(isEvenorOdd(34), "isEvenorOdd(34)", true);
-    check(isEvenorOdd(55), "isEvenorOdd(55)", false);
-    check(isEvenorOdd(49), "isEvenorOdd(49)", false);
+    check(isEven(4), "isEven(4)", true);
+    check(isEven(8), "isEven(8)", true);
+    check(isEven(34), "isEven(34)", true);
+    check(isEven(55), "isEven(55)", false);
+    check(isEven(49), "isEven(49)", false);
 } catch (err) {
     console.log(chalk.red("Une erreur est survenue:", err));
 }

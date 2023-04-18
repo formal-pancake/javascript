@@ -7,7 +7,11 @@
 
 
 
-
+const myName = "John";
+const mySurname = "Pork";
+const myAge = 26;
+const isRich = true;
+const myCreditCard = "123456789";
 
 
 

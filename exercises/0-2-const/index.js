@@ -4,8 +4,8 @@
 // #                                     #
 // #######################################
 
-let PI = 3.14159;
-const radius = 5;
+const PI = 3.14159;
+let radius = 5;
 let area;
 
 // Calculate the area of a circle using the formula A = πr^2
@@ -24,7 +24,7 @@ area = PI * radius * radius;
 console.log("The new area of the circle is: " + area);
 
 
-const num = 10;
+let num = 10;
 
 
 // Print out the value of the num variable

@@ -1,7 +1,9 @@
 // Crée une fonction appellé 'square' qui retourne le carré d'un nombre
 // example: (6) => 36
 
-
+function square(n) {
+    return n * n;
+}
 
 
 
@@ -12,7 +14,10 @@
 // r => le rayon du cercle
 // retourne: la surface du cercle
 
-
+function circleSurface(rayon) {
+    const PI = 3.14;
+    return PI * square(rayon);
+}
 
 
 

@@ -4,7 +4,10 @@
 // et écrit dans la console l'addition suivit du resultat
 // example: a = 12, b = 10 ==> "12+10=22"
 
-
+function add(a, b) {
+    console.log(`${a} + ${b} = ${a + b}`);
+    return a + b;
+}
 
 
 
@@ -13,7 +16,10 @@
 // Dans le même style, Crée une fonction appellé 'substract'
 
 
-
+function substract(a, b) {
+    console.log(`${a} - ${b} = ${a - b}`);
+    return a - b;
+}
 
 
 

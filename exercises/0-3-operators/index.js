@@ -3,11 +3,11 @@ let cubeHauteur = 11;
 
 
 // Rajoute 5 a 'cubeLargeur'
-
+cubeLargeur += 5;
 
 
 // Rajoute 7 a 'cubeHauteur'
-
+cubeHauteur += 7;
 
 
 
@@ -15,39 +15,39 @@ let cubeAire = cubeLargeur * cubeHauteur;
 
 
 // Remplace 'undefined' par la largeur du cube multpiplier par 2;
-let rectangleLargeur = undefined;
+let rectangleLargeur = cubeLargeur * 2;
 
 
 // Remplace 'undefined' par la hauteur du cube plus 22;
-let rectangleHauteur = undefined;
+let rectangleHauteur = cubeHauteur + 22;
 
 
 // Remplace 'undefined' par le calcul de l'aire du rectangle.
-let rectangleAire = undefined;
+let rectangleAire = rectangleHauteur * rectangleLargeur;
 
 
 
 // Remplace 'undefined' par la hauteur du rectangle diviser par 2
-let triangleBase = undefined;
+let triangleBase = rectangleHauteur / 2;
 
 
 // Rajoute 6 à 'triangleBase'
-
+triangleBase += 6;
 
 
 // Rajoute la valeur de 'cubeHauteur' à 'triangleBase'
-
+triangleBase += cubeHauteur;
 
 
 let triangleHauteur = 4;
 
 
 // Rajoute la largeur du cube moins 4 à 'triangleHauteur
-
+triangleHauteur += cubeLargeur - 4;
 
 
 // Remplace 'undefined' par le calcul de l'aire du triangle : (B*H)/2
-let triangleAire = undefined;
+let triangleAire = (triangleBase * triangleHauteur) / 2;
 
 
 

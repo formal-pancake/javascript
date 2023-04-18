@@ -6,7 +6,15 @@
 
 
 
-
+function checkNumber(nombre) {
+    if (nombre > 10) {
+        console.log("Trop grand");
+    } else if (nombre >= 5) {
+        console.log("Parfait");
+    } else {
+        console.log("Trop petit");
+    }
+}
 
 
 
