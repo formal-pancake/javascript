@@ -1,0 +1,1521 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Les Variables\r\n\r\n\r\n "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les variables sont utilisées pour stocker des informations qui peuvent être référencées et manipulées dans un programme informatique. Elles fournissent également un moyen d'étiqueter les données avec un nom descriptif, de sorte que nos programmes puissent être compris plus clairement par le lecteur et nous-mêmes.\r\n\r\nIl est utile de penser aux variables comme des conteneurs qui contiennent des informations. Leur seul but est d'étiqueter et de stocker des données en mémoire. Ces données peuvent ensuite être utilisées tout au long de votre programme."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Déclarer des variables\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour déclarer une variable, utilisez le mot clé **`let`**, suivi d'un nom, généralement en camel case (par exemple: myVariable)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myVariable;          // JavaScript crée une variable appelée myVariable qui ne contient aucune valeur"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Assigner une valeur à une variable\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Avoir une variable est bien, mais quel est l'intérêt si elle ne contient aucune valeur ?\r\n\r\nPour assigner une valeur à une variable, il suffit d'écrire le nom de la variable suivi d'un signe égal (=) et enfin de la valeur que vous souhaitez lui attribuer."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge;                  // Déclare une variable nommée 'myAge'\r\nmyAge = 17;                 // Attribue la valeur 17 à la variable\r\n\r\nlet myName = \"John\";        // Déclare une variable nommée 'myName' et assigne la valeur \"John\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "> *Notez que vous pouvez déclarer une variable sans lui attribuer de valeur. Par défaut, une variable sans valeur est égale à **`undefined`**.*"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les Variables Constante"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les variables `const` sont similaires aux variables `let`, à l'exception qu'elles ne peuvent pas être modifiées. Elles sont déclarées de la même manière que les variables let, mais elles doivent impérativement être attribuées une valeur (Puisque vous ne pouvez pas modifier la valeur, une fois déclarée, il est obliger de lui attribuer une valeur)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const superSecretPassword = \"password123\";  // tout va bien\r\n\r\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\r\n\r\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les Types de Valeurs\r\n\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Lorsqu'une variable est créée, son type est déduit à partir de la valeur qui lui est attribuée.\r\n\r\nVoici les différents types de valeurs :\r\n\r\n| Type    \t                        | Valeur                 \t| Exemple       \t    |\r\n|---------\t                        |-----------------------\t|---------------\t    |\r\n| Boolean (Booléen)\t                | `true` ou `false`         | `true`          \t    |\r\n| Number (Nombre) \t                | N'importe quel nombre     | `-56.2`         \t    |\r\n| String (Chaîne de caractères)  \t| Une chaîne de caractères \t| `\"Bonjour le monde\"` \t|\r\n\r\n> Note : une valeur de chaîne de caractères sera toujours entre guillemets simples/doubles."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Utiliser les variables\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Très bien ! Maintenant vous savez comment créer des variables et comment leur attribuer une valeur. Mais que peut-on faire avec elles ?\r\n\r\nTout d'abord, essayons de modifier la valeur d'une variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Beaucoup de choses se passent ; la variable 'myName' reçoit une nouvelle valeur, quelque chose d'étrange se produit avec la valeur 'myAge' et 'isMajor' se voit également attribuer une nouvelle valeur.\r\n\r\nConcentrons-nous sur la variable 'myAge' :"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge = myAge + 6"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La variable est déclarée et se voit attribuer la valeur `17`.\r\nEnsuite, nous attribuons à la variable la valeur `myAge + 6`.\r\n\r\nDans ce cas, l'ordinateur comprendra cela de la manière suivante :"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge = 17 + 6;  // myAge = myAge + 6 "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Comme vous pouvez le voir, `myAge` est remplacé par sa propre valeur et `6` lui est ajouté. Et finalement, la valeur obtenue est assignée à myAge.\r\n\r\nCela se produit parce que le symbole égal ( = ) ne signifie pas \"égal\" mais plutôt \"attribuer à\".\r\n\r\nEn mathématiques, il n'est pas possible qu'une valeur soit égale à elle-même plus 6. Mais en programmation, puisque le symbole signifie **attribuer** plutôt que **être égal à**, nous attribuons la valeur de `myAge + 6` à `myAge`.\r\n\r\n=> Cela revient à simplement ajouter +6 à la valeur de myAge.\r\n\r\nVoici une façon plus simple d'incrémenter une variable :"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myAge = 17;\r\n\r\nmyAge += 6;      // equivalent of doing: myAge = myAge + 6"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "`myAge` est égal à `23` "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les opérateurs"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\n\r\n| Operator  | Description                   | Example           |\r\n|---------\t|-----------------------        |---------------    |\r\n| +         | Addition                      | `4 + 8` => 12     |\r\n| -         | Soustraction                  | `4 - 3` => 1      |\r\n| * \t    | Multpiplication \t  \t        | `4*2` => 8        |\r\n| / \t    | Division \t         \t        | `4/2` => 2        |\r\n| += \t    | Addition et assignation \t    | `let x = 10;` <br> `x += 5` <br> x est égal a 15  |\r\n| -= \t    | Soustraction et assignation   | `let x = 10;` <br> `x -= 5` <br> x est égal a 5   |\r\n| *= \t    | Multiplication et assignation | `let x = 10;` <br> `x *= 5` <br> x est égal a 50  |\r\n| /= \t    | Division et assignation       | `let x = 10;` <br> `x /= 5` <br> x est égal a 2   |\r\n| ++        | Incrementation                | `let x = 10;` <br> `x++;`   <br> x est égal a 11  |\r\n| --        | Decrementation                | `let x = 10;` <br> `x--;`   <br> x est égal a 9   |\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Les Fonctions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une fonction est simplement un \"morceau\" de code que vous pouvez utiliser, plutôt que de l'écrire plusieurs fois. Les fonctions permettent aux programmeurs de décomposer un problème en morceaux plus petits, chacun effectuant une tâche particulière.\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Créer une fonction"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer une fonction, utilisez le mot-clé `function` suivi d'un nom (en camelCase) avec des parenthèses à la fin, et enfin un bloc de code (représenté par des accolades: { } )."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function myFunction() { \r\n    \r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour utiliser une fonction, écrivez le nom de la fonction suivi de parenthèses."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function myFunction() {\r\n\r\n}\r\n\r\nmyFunction();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, l'ordinateur crée une fonction, puis l'exécute. Mais lorsque vous exécutez ce code, rien ne se passe, alors essayons d'ajouter une fonctionnalité!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function meow() {\r\n    console.log(\"meow\");\r\n}\r\n\r\nmeow();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Si vous exécutez le code ci-dessus, \"meow\" sera imprimé sur la console à chaque fois que la fonction meow est appelée.\r\n\r\nMais concentrons-nous sur la deuxième ligne."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"meow\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "C'est quoi exactement ce qui se passe ici ?\r\n\r\n`console` est ce qu'on appelle un **objet** (nous parlerons d'objets plus tard) et `log()` est une **méthode** de cet objet.\r\n\r\nLes **méthodes** sont simplement des **fonctions** contenues dans un objet.\r\n\r\nImaginez un objet comme une grosse boîte qui contient des `variables` et des `fonctions`, pour accéder au contenu d'un objet, il suffit d'écrire le nom de cet objet suivi d'un point (.) et de la fonction souhaitée.\r\n\r\nDans l'exemple ci-dessus, nous appelons la méthode `log()` de l'objet `console` et nous donnons `\"meow\"` comme **paramètre**.\r\n\r\nLorsqu'il est exécuté, \"meow\" sera affiché dans la console."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les Paramètres"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Donner des paramètres"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour donner un paramètre a une fonction, écriver le nom d'une variable ou, dans ce cas ci, une valeur."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"meow\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Nous donnons ici les données `\"meow\"` de type `string` (voir [Types de valeurs](#les-types-de-valeurs)) à la fonction `log()`.\r\n\r\nEssayons de donner des variables à la place."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nconsole.log(myName);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ceci affichera `\"John\"` dans la console. Mais que faire si nous voulions dire `\"Bonjour John\"` plutôt que de simplement mentionner le nom de la personne ?\r\n\r\nPour ce faire, nous pourrions donner `\"Bonjour \" + myName` en tant que paramètre pour la fonction."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nconsole.log(\"Bonjour \" + myName);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Remarqué l'espace a la fin de \"Bonjour\", sans celui ci, la console aurait écrit \"BonjourJohn\" au lieu de \"Bonjour John\"\r\nParfait ! Maintenant, essayons de ~~doxxer~~ tout dire sur John. "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\"\r\nlet myAge = 17;\r\nlet address = \"***REMOVED***\";     // Oui, John habbite au McDo de ***REMOVED*** \r\n\r\nconsole.log(\"Bonjour, je m'appelle \" + myName + \", J'ai \" + myAge + \" ans et j'habite à \" + address);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Cela fonctionne, mais c'est très fastidieux à écrire.\r\n\r\nUne autre façon d'obtenir le même résultat est d'utiliser **l'interpolation de chaîne** (String Interpolation en anglais)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\nlet myAge = 17;\r\nlet address = \"***REMOVED***\";\r\n\r\nconsole.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Maintenant c'est plus facile à lire !\r\n\r\nPour utiliser `l'interpolation de chaîne` (string interpolation), nous utilisons des backticks (`\\`) au lieu de simples ou doubles guillemets ('' ou \"\"). Et `${}` lors de la définition d'une variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let myName = \"John\";\r\n\r\nlet myGreeting = \"Bonjour tout le monde! Je m'appelle \" + myName\r\n\r\nlet interpolatedString = `Bonjour tout le monde! Je m'appelle ${myName}`;"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Ajouter des paramètres a une fonction"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Lorsque vous créez une fonction, vous pouvez définir des paramètres qui serviront de placeholders (ou \"marqueurs de position\") pour les valeurs qui seront passées dans la fonction. Cela vous permet de réutiliser la même fonction avec différentes valeurs.\r\n\r\nLes fonctions vous permettent de réutiliser une partie de votre code sans avoir à l'écrire à nouveau.\r\n\r\nDisons que nous avons un magasin et que chaque fois que quelqu'un entre, nous devons lui dire bonjour et ajouter 1 au nombre total de visiteurs. Cela serait l'équivalent du code suivant :\r\n\r\nSi nous avons seulement quelques personnes chaque jour, cela peut être gérable, mais que se passe-t-il si des centaines de personnes entrent chaque jour ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let totalVisitors = 0;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors+=1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n\r\n// Person enters the shop\r\nconsole.log(\"Hello! Welcome to our shop\");\r\ntotalVisitors += 1;\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Voici une solution à ce problème : les fonctions !"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson() {\r\n    totalVisitors += 1;\r\n    console.log(\"Hello! Welcome to our shop\");\r\n}\r\n\r\nlet totalVisitors = 0;\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n\r\n// Person enters the shop\r\ngreetPerson();\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "C'est génial, mais que faire si nous voulions également dire le nom du client ? C'est là que les paramètres sont utiles."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\nlet person1 = \"Jack\";\r\nlet person2 = \"Bob\";\r\nlet person3 = \"Alexander\";\r\n\r\ngreetPerson(person1);\r\ngreetPerson(person2);\r\ngreetPerson(person3);\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour ajouter un paramètre, il suffit d'ajouter un nom entre les parenthèses de la fonction. Ceci deviendra une variable qui contient les données de ce qui a été donné."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(\"John\");"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Comme vous pouvez le voir, cela n'a pas besoin d'être un nom pour être utilisé. Cela peut même être un nombre."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(24);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Return"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Le mot clé `return` permet de retourner une valeur a partir d'une fonction"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Nous avons une fonction `calculAireCarre` qui prend en parametre une hauteur et une largeur et retourne l'aire du caré"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\r\n    return largeur * hauteur\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Si nous donnons une largeur de 10 et une hauteur de 5 a la fonction, elle retournera 50"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\r\n    return largeur * hauteur\r\n}\r\n\r\nconst aireCarre = calculAireCarre(10, 5);\r\n\r\nconsole.log(`Aire du carré: ${aireCarre}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, créer une variable n'est pas néscessaire. En effet, nous pouvons simplement executer la fonction depuis le `console.log()`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function calculAireCarre(largeur, hauteur) {\r\n    return largeur * hauteur\r\n}\r\n\r\nconsole.log(`Aire du carré: ${calculAireCarre(10, 5) }`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Conditions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Opérateurs"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Opérateurs d'expression booléenne \r\n\r\n| Opérateur | Descriptions              | Exemple       \t        |\r\n|---------\t|-----------------------\t|---------------\t        |\r\n| <\t        | est inférieur à           | `5 < 10`                  |\r\n| >         | est supérieur à         \t| `10 > 1`         \t        |\r\n| <=  \t    | est inférieur ou égal à   | `4 <= 10` <br> `4 <= 4`   |\r\n| >=  \t    | est supérieur ou égal à   | `4 >= 2` <br> `4 >= 4`    |\r\n| ==        | est égal à                | `\"john\" == \"john\"`        |\r\n| !=        | est different de          | `\"john\" != \"pierre\"`      |\r\n> Tout les examples équivale la valeur `true`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## L'instruction \"if\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les blocs `if` sont des blocs de code qui seront executer uniquement si une `condition` l'accorde."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Bloc If"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour définir une instruction `if`; nottez `if`, suivi de parenthese qui contienent une **expression booléenne** et enfin, un bloc de code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Expression booléenne"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une expression booléenne est une expression qui donne une valeur booléenne. Par exemple, la valeur pour 5 > 3 est vrai et la valeur pour 5 < 4 est faux."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(\"5 > 3 : \" + (5 > 3));      // => true\r\nconsole.log(\"5 < 4 : \" + (5 < 4));      // => false\r\nconsole.log(\"10 == 10: \" + (10 == 10)); // => true\r\nconsole.log(\"5 != 10: \" + (5 != 10));   // => true\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\nNous voulons accetper l'acces a un bar si l'utilisateur est majeur."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## L'instruction \"else\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les blocs else sont des blocs de code qui seront executer uniquement si un bloc if n'a pas été executé"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "if (condition) {\r\n    //  Bloc de code à exécuter si la condition est vraie (true).\r\n} else {\r\n    // Block de code à exècuter si la condition if est fausse (false).\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\r\nNous voulons accetper l'acces a un bar si l'utilisateur est majeur. Et lui dire de s'en aller si il est mineur"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let age = 17;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Bienvenue au bar!\");\r\n} else {\r\n    console.log(\"Vas-t'en!\");\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## L'instruction 'switch'"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une déclaration switch est utile lorsqu'on a besoin de verifier plusieurs fois la valeur d'une variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "switch (key) {\r\n    case value:\r\n        //code\r\n        break;\r\n\r\n    default:\r\n        break;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Avec if"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruit = \"orange\";\r\n\r\nif (fruit == \"orange\") {\r\n    console.log(\"Les oranges sont a 5€\");\r\n} else if (fruit == \"pomme\") {\r\n    console.log(\"Les pommes sont a 3€\");\r\n} else if (fruit == \"fraise\") {\r\n    console.log(\"Les fraises sont a 55€\");\r\n} else if (fruit == \"cerise\") {\r\n    console.log(\"Les cerises sont a 4€\");\r\n} else {\r\n    console.log(\"Nous ne vendons pas ce fruit.\");\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Avec switch"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruit = \"orange\";\r\n\r\nswitch (fruit) {\r\n    case \"orange\":\r\n        console.log(\"Les oranges sont a 5€\");\r\n        break;\r\n\r\n    case \"pomme\":\r\n        console.log(\"Les pommes sont a 3€\");\r\n        break;\r\n\r\n    case \"fraise\":\r\n        console.log(\"Les fraises sont a 55€\");\r\n        break;\r\n\r\n    case \"cerise\":\r\n        console.log(\"Les cerises sont a 4€\");\r\n        break;\r\n\r\n    default:\r\n        console.log(\"Nous ne vendons pas ce fruit.\");\r\n        break;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Objets, Propriétés et Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les objets sont un groupement de variables et de fonctions.\r\n\r\nDans la vrai vie (pas la fausse), une voiture est un objet.\r\n\r\nUne voiture a des propriétés et des méthodes:\r\n\r\n| Propriétés                | Méthodes       \t        |\r\n|-----------------------\t|---------------\t        |\r\n| voiture.nom = Fiat        | voiture.démarer()         |\r\n| voiture.model = 500       | voiture.rouler()        \t|\r\n| voiture.poids = 850kg     | voiture.freiner()         |\r\n| voiture.couleur = blanc   | voiture.eteindre()        |\r\n\r\nToutes les voiture auront les meme propriété **mais** avec des **valeurs** différentes\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Propriété"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des propriétés (variables), dans des accolades, ajouter les propriété suivi de leurs valeurs\r\n\r\n> Un objet est un type de valeur donc n'oublier pas de le stocker dans une variable!"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const voiture = {\r\n    nom: \"Fiat\",\r\n    model: \"500\",\r\n    poids: \"850Kg\",\r\n    couleur: \"blanc\"\r\n};\r\n\r\nconsole.log(voiture.nom);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les valeurs sont noté en pair de `nom:valeur` (nom et valeur séparer par un double point).\r\nPour acceder une propriété d'un objet, ajouter un point suivi du nom de la propriété voulue a la suite de la variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Méthodes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un objet avec des méthodes (fonction), dans des accolades, ajouter les nom de méthode suivi de leurs fonction\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function() {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`); \r\n    }\r\n};\r\n\r\npersonne.sePresenter();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour appeller une méthode d'un objet, ajouter un point suivi du nom de la méthode voulue a la suite de la variable."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Constructeur d'objet"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Imaginons que nous devons créer un objet `personne` régulierement. Au lieu de créer l'objet manuelement, il est intéressant d'utiliser un constructeur d'objet.\r\n\r\nPour créer un constructeur d'objet, déclarer une fonction qui aura le nom génerique de votre objet - dans ce cas ci, Person - et, en paramètres, les propriétés de votre objet."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function Person(name, age, city) {\r\n    this.test = 24\r\n    this.name = name;\r\n    this.age = age;\r\n    this.city = city;\r\n    this.sePresenter = function() {\r\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\r\n    }\r\n}\r\n\r\nconst person = new Person(\"John\", 24, \"Gembloux\");\r\nconst person2 = new Person(\"Fred\", 18, \"***REMOVED***\");\r\n\r\nperson.sePresenter();\r\nperson2.sePresenter();\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## *Arrow function and function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Il y a en réalité deux façons différente de créé une function:\r\n- Avec le mot clé `function`\r\n- Avec une flêche"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function hello() {\r\n    console.log(\"hello\");\r\n};\r\n\r\nconst world = () => {\r\n    console.log(\"world\");\r\n};\r\n\r\nhello();\r\nworld();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Quel est la différence?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La différence entre une function et arrow function revient au mot clé `this`.\r\nDans une fonction normale, le mot clé `this` représente le **parent** de la fonction.\r\nAlors que dans une arrow function, le mot clé `this` représente le **parent** de la position ou elle a été appellé."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function () {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    sePresenterArrow: () => {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    foo: function () {\r\n        console.log(\"from function: \", this);\r\n        const bar = () => {\r\n            console.log(\"from arrow function: \", this);\r\n        }\r\n\r\n        bar();\r\n    }\r\n};\r\n\r\npersonne.sePresenter();\r\npersonne.sePresenterArrow();\r\n\r\npersonne.foo();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Boucles, itérations et arrays"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les boucles offrent un moyen facile et rapide de faire quelque chose répétivement.\r\n\r\nIl y a different types de boucles, mais elles font toutes essentiellement la même chose: elles répètent une action pour un certain nombre de fois\r\n\r\nLes boucles sont très souvent utilisées pour itérer des arrays."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Arrays"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Un array est un type de variable qui contient une liste de valeurs.\r\n\r\nL'array peut contenir une liste de valeurs de type different cependant il est recommander de ne pas faire d'array qui contiennent des types de valeurs differents"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Créer un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour créer un array, déclarer une variable (generalement const¹), suivi d'une liste.\r\n\r\n¹: L'ordinateur gère differement les array des variables. Bien que const, l'array peut toujours etre modifier."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Syntaxe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Déclarer une variable, assigner une liste créer avec `[]`. Chaques valeurs dans cette liste doivent êtres séparé par une virgule"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "##### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Utiliser un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour accèder au valeurs contenu dans un array, ajouter des crochets (`[]`) après le nom de la variable.\r\n\r\nA l'interieur des crochets, ajouter l'indexe / la position de l'element que vous voulez acceder.\r\n\r\n> Attention! L'indexe d'un array commence a 0 et non a 1. Donc `array[1]` retournera le **deuxieme** elements de l'array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[0]);\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Index out of bounds exeptions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "\"Index out of bounds exception\" est probablement l'erreur la plus courante en programations. Elle signifie que nous essayons d'acceder a un element qui est en dehors de la liste."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nconsole.log(fruits[99]);    // ! Il n'y a pas d'element a la position 99 de l'array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, Javascript nous donnes une valeur non définie (`undefined`) à la place d'une erreur. Cela peut rendre le déboguage d'une application beaucoup plus pénible. Malheureusement, nous ne pouvons rien y faire. C'est l'un des défauts de Javascript."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Boucles et itérations"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les boucles et les itérations permettent d'exécuter du code répétitivement rapidement et simplement. Ainsi que d'itérer un array."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle while"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle while execute du code jusqu'à ce qu'une condition soit remplie."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "while (condition) {\r\n    // code\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La condition est une expression booléenne qui définit l'execution du bloc de code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let i = 0;\r\nwhile (i < 10) {\r\n    console.log(i);\r\n    i++;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nlet i = 0;\r\nwhile (i < fruits.length) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n\r\n    i++;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "> `length` est une propriété de l'array qui contient la taille de celui-ci. Cela permet de ne pas acceder a des valeurs en dehors de l'array."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle do while"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle `do while` est extremement similaire a une boucle `while`. La seule différence étant que la condition sera executer **apres** la premiere itération de la boucle.\r\n\r\nCela est utile si votre boucle nécessite au moins **une** itération.\r\n\r\nSon utilisation est plus rare."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "do {\r\n    // code\r\n} while (condition)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une boucle `for` prend trois \"arguments\", une expressionInitiale, une condition et une expressionFinale."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (expressionInitiale; condition; expressionFinale) {\r\n    // code\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "L'expression initiale initialise une variable.\r\nLa condition est une expression booléenne qui dicte la fin de la boucle.\r\nL'expression finale est une expression qui est executer a la fin de chaque iteration de la boucle."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "L'expression initiale est généralement nommé `i` ou `index` et est assignée la valeur `0`.\r\n\r\nLa condition dicte le nombre de foix que la boucle sera executer. Ici, 10 fois.\r\n\r\nL'expression finale incrémente (rajoute 1) a notre variable `i`."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let i = 0; i < 10; i++) {\r\n    console.log(i);\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici, nous écrivons dans la console chaque valeurs contenue dans l'array `fruits`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let i = 0; i < fruits.length; i++) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for of"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Comme la boucle `for`, la boucle `for of` permet d'itérer un array mais a une difference.\r\n\r\nAu lieu de créer un index, verifier qu'il est inférieur a la taille de l'array et enfin l'incrémenter; la boucle `for in` est spécialement faite pour itéré un array (la ou une boucle for aurait pu être utiliser dans d'autres scénarios)."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let element of array) {\r\n    // code\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let fruit of fruits) {\r\n    console.log(fruit);\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une variable `fruit` est créé a chaque itération et ensuite log dans la console"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle for in"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La boucle `for in` est très similaire a la boucle `for of` avec la difference principale étant qu'elle permet d'itérer un objet et non un array"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "for (let key in object) {\r\n    // code\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const person = {\r\n    name: \"Jean\",\r\n    surname: \"Baignoire\",\r\n    age: 24,\r\n    sePresenter: function () {\r\n        console.log(`Salut moi c'est ${this.name}`);\r\n    }\r\n};\r\n\r\nfor (let key in person) {\r\n    console.log(key);\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Boucle foreach"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La fonction `foreach` est une méthode présente sur **tout** les array. Son seul argument est un `callback`"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "[].forEach(function (value, index, array) {\r\n    // code\r\n})"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "La fonction `callback` prends trois arguments:\r\n- value: qui correspond a la valeur de l'element actuel de l'array\r\n- index: l'index de l'element actuel de l'array\r\n- array: l'array dans sa totalité"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Example"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\n\r\nfruits.forEach(function (value, index, array) {\r\n    console.log(\"valeur: \", value);\r\n    console.log(\"index: \", index);\r\n    console.log(\"array: \", array);\r\n    console.log(\"\\n\");\r\n})"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Classes"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les classes sont des templates - des plans - pour fabriquer des objets. Elles `encapsulent` les données et le code qui travaille sur ces données.\r\n\r\n\"L'encapsulation est un mécanisme consistant à rassembler les données et les méthodes au sein d'une structure en cachant l'implémentation de l'objet, c'est-à-dire en empêchant l'accès aux données par un autre moyen que les services proposés.\" \r\n-DataScientest.com"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Définir une classe"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour définir une classe, on commence avec le mot clé `class` suivi du nom de la classe et enfin un bloc de code qui contiendra les propriétés et méthodes de la classe."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class MyClass {\r\n    \r\n    // Propriétés\r\n\r\n    // Méthodes\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "> Les classes commences par des majuscules !"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Une méthode présente sur, *prèsque*, toute les classes est le `constructor`.\r\n\r\nLe constructeur permet d'initialiser la classe avec des données spécifique. Par example, si nous avons une classe `Humain`, chaque humain aura un nom et un age diffferent."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Humain {\r\n\r\n    constructor(nom, age) {\r\n        this.nom = nom;\r\n        this.age = age;\r\n    }\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Ici une classe appelé `Humain` est créée avec un constructeur qui prend un nom et un age. Maintenant, comment utiliser cette classe?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Human {\r\n    constructor(name, age) {\r\n        this.name = name;\r\n        this.age = age;\r\n    }\r\n}\r\n\r\nconst john = new Human(\"john\", 16);\r\nconsole.log(john);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "En utilisant le mot clé `new`, nous disons a javascript que nous voulons un nouvelle objet. Ici, un nouvel objet de type `Human`.\r\nEntre parenthese, nous donnont deux paramètres, ceux-ci sont les paramètres que nous avons définit dans le constructeur de la classe."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.calcArea();\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.calcArea();\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "/**\r\n * A class used to generate a rectangle\r\n */\r\nclass Rectangle {\r\n    height;\r\n    width;\r\n\r\n    /**\r\n     * Constructor of the `Rectangle` class\r\n     * @param {Number} height The height of the rectangle\r\n     * @param {Number} width The width of the rectangle\r\n     */\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.#calcArea();\r\n    }\r\n\r\n    /**\r\n     * \r\n     * @returns returns the area of the rectangle\r\n     */\r\n    #calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class ClassWithGetSet {\r\n    #msg = \"hello world\";\r\n    get msg() {\r\n        return this.#msg;\r\n    }\r\n    set msg(x) {\r\n        this.#msg = `hello ${x}`;\r\n    }\r\n}\r\n\r\nconst instance = new ClassWithGetSet();\r\nconsole.log(instance.msg); // \"hello world\"\r\n\r\ninstance.msg = \"cake\";\r\nconsole.log(instance.msg); // \"hello cake\"\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Animal {\r\n    name;\r\n    constructor(name) {\r\n        this.name = name;\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} makes a noise.`);\r\n    }\r\n}\r\n\r\nclass Dog extends Animal {\r\n    constructor(name) {\r\n        super(name);\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} barks.`);\r\n    }\r\n}\r\n\r\nconst dog = new Dog(\"Jack\");\r\ndog.speak();"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Jack barks.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Dice {\r\n    static roll(sides) {\r\n        return Math.floor(Math.random() * sides);\r\n    }\r\n}\r\n\r\nconst random = Dice.roll(6);\r\nconsole.log(random);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "3",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Plus"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Paramètres"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Default "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Pour donner une valeur par défaut a un paramètre, dans les parenthese de la fonction, r'ajoute un égal suivi de la valeur par defaut apres le nom du paramètre."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function createUser(name = \"john\", age = 24) {\r\n    return {\r\n        name,\r\n        age\r\n    }\r\n}\r\n\r\nconst user = createUser(\"Pierre\", 24);\r\nconst userDefault = createUser();\r\n\r\nconsole.log(user);\r\nconsole.log(userDefault);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Les callbacks"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "Les `callbacks` sont, généralement, des fonctions donné en paramètres a des fonctions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function doSomething(data = [], callback = function() {}) {\r\n    data.sort((a, b) => a - b);\r\n\r\n    callback(data);\r\n} "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Destructuring"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Destructuer des objets"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Spread syntax (...)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Rest parameters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#### Rest property"
+            ],
+            "outputs": []
+        }
+    ]
+}

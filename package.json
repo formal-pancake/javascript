@@ -1,0 +1,17 @@
+{
+  "name": "cedeg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "exercise": "node ./javascript/exercises/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.1.5",
+    "prompt-sync": "^4.2.0"
+  }
+}
