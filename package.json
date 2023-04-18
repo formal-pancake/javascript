@@ -7,7 +7,7 @@
   "scripts": {
     "exercise": "node ./exercises/index.js"
   },
-  "author": "",
+  "author": "***REMOVED***",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",

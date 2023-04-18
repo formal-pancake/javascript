@@ -52,7 +52,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myAge;                  // Déclare une variable nommée 'myAge'\r\nmyAge = 17;                 // Attribue la valeur 17 à la variable\r\n\r\nlet myName = \"John\";        // Déclare une variable nommée 'myName' et assigne la valeur \"John\""
+                "let myAge;                  // Déclare une variable nommée 'myAge'\nmyAge = 17;                 // Attribue la valeur 17 à la variable\n\nlet myName = \"John\";        // Déclare une variable nommée 'myName' et assigne la valeur \"John\""
             ],
             "outputs": []
         },
@@ -80,7 +80,7 @@
         {
             "language": "javascript",
             "source": [
-                "const superSecretPassword = \"password123\";  // tout va bien\r\n\r\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\r\n\r\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
+                "const superSecretPassword = \"password123\";  // tout va bien\n\nsuperSecretPassword = \"newpassword\";        // ! Cela générera une erreur !\n\nconst newPassword;                          // ! Une variable const ne peut pas être déclarée sans être assignée une valeur !"
             ],
             "outputs": []
         },
@@ -101,7 +101,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";        // String\r\nlet myAge = 17;             // Number\r\nlet isMajor = false;        // Boolean"
+                "let myName = \"John\";        // String\nlet myAge = 17;             // Number\nlet isMajor = false;        // Boolean"
             ],
             "outputs": []
         },
@@ -122,7 +122,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\nlet myAge = 17;         \r\nlet isMajor = false; \r\n\r\nmyName = \"Johnathan\";\r\nmyAge = myAge + 6;\r\nisMajor = true;"
+                "let myName = \"John\";\nlet myAge = 17;         \nlet isMajor = false; \n\nmyName = \"Johnathan\";\nmyAge = myAge + 6;\nisMajor = true;"
             ],
             "outputs": []
         },
@@ -416,7 +416,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\nlet person1 = \"Jack\";\r\nlet person2 = \"Bob\";\r\nlet person3 = \"Alexander\";\r\n\r\ngreetPerson(person1);\r\ngreetPerson(person2);\r\ngreetPerson(person3);\r\n\r\n"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\nlet person1 = \"Jack\";\nlet person2 = \"Bob\";\nlet person3 = \"Alexander\";\n\ngreetPerson(person1);\ngreetPerson(person2);\ngreetPerson(person3);\n\n"
             ],
             "outputs": []
         },
@@ -430,7 +430,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(\"John\");"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\ngreetPerson(\"John\");"
             ],
             "outputs": []
         },
@@ -444,7 +444,7 @@
         {
             "language": "javascript",
             "source": [
-                "function greetPerson(name) {\r\n    console.log(`Hello ${name}! Welcome to our shop`);\r\n}\r\n\r\ngreetPerson(24);"
+                "function greetPerson(name) {\n    console.log(`Hello ${name}! Welcome to our shop`);\n}\n\ngreetPerson(24);"
             ],
             "outputs": []
         },
@@ -857,7 +857,7 @@
         {
             "language": "javascript",
             "source": [
-                "const personne = {\r\n    nom: \"Pierre\",\r\n    prenom: \"Vildesac\",\r\n    taille: 170,\r\n    poids: 85,\r\n    sePresenter: function () {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    sePresenterArrow: () => {\r\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\r\n    },\r\n    foo: function () {\r\n        console.log(\"from function: \", this);\r\n        const bar = () => {\r\n            console.log(\"from arrow function: \", this);\r\n        }\r\n\r\n        bar();\r\n    }\r\n};\r\n\r\npersonne.sePresenter();\r\npersonne.sePresenterArrow();\r\n\r\npersonne.foo();"
+                "const personne = {\n    nom: \"Pierre\",\n    prenom: \"Vildesac\",\n    taille: 170,\n    poids: 85,\n    sePresenter: function () {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    sePresenterArrow: () => {\n        console.log(`Bonjour! Je suis ${this.nom} ${this.prenom}, je fait ${this.taille}cm et je pèse ${this.poids}kg.`);\n    },\n    foo: function () {\n        console.log(\"from function: \", this);\n        const bar = () => {\n            console.log(\"from arrow function: \", this);\n        }\n\n        bar();\n    }\n};\n\npersonne.sePresenter();\npersonne.sePresenterArrow();\n\npersonne.foo();"
             ],
             "outputs": []
         },
@@ -1060,7 +1060,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nlet i = 0;\r\nwhile (i < fruits.length) {\r\n    const fruit = fruits[i];\r\n\r\n    console.log(fruit);\r\n\r\n    i++;\r\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nlet i = 0;\nwhile (i < fruits.length) {\n    const fruit = fruits[i];\n\n    console.log(fruit);\n\n    i++;\n}"
             ],
             "outputs": []
         },
@@ -1095,7 +1095,7 @@
         {
             "language": "javascript",
             "source": [
-                "do {\r\n    // code\r\n} while (condition)"
+                "do {\n    // code\n} while (condition)"
             ],
             "outputs": []
         },
@@ -1116,7 +1116,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (expressionInitiale; condition; expressionFinale) {\r\n    // code\r\n}"
+                "for (expressionInitiale; condition; expressionFinale) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -1179,7 +1179,7 @@
         {
             "language": "javascript",
             "source": [
-                "for (let element of array) {\r\n    // code\r\n}"
+                "for (let element of array) {\n    // code\n}"
             ],
             "outputs": []
         },
@@ -1193,7 +1193,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\nfor (let fruit of fruits) {\r\n    console.log(fruit);\r\n}"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\nfor (let fruit of fruits) {\n    console.log(fruit);\n}"
             ],
             "outputs": []
         },
@@ -1235,7 +1235,7 @@
         {
             "language": "javascript",
             "source": [
-                "const person = {\r\n    name: \"Jean\",\r\n    surname: \"Baignoire\",\r\n    age: 24,\r\n    sePresenter: function () {\r\n        console.log(`Salut moi c'est ${this.name}`);\r\n    }\r\n};\r\n\r\nfor (let key in person) {\r\n    console.log(key);\r\n}"
+                "const person = {\n    name: \"Jean\",\n    surname: \"Baignoire\",\n    age: 24,\n    sePresenter: function () {\n        console.log(`Salut moi c'est ${this.name}`);\n    }\n};\n\nfor (let key in person) {\n    console.log(key);\n}"
             ],
             "outputs": []
         },
@@ -1256,7 +1256,7 @@
         {
             "language": "javascript",
             "source": [
-                "[].forEach(function (value, index, array) {\r\n    // code\r\n})"
+                "[].forEach(function (value, index, array) {\n    // code\n})"
             ],
             "outputs": []
         },
@@ -1277,7 +1277,7 @@
         {
             "language": "javascript",
             "source": [
-                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\r\n\r\n\r\nfruits.forEach(function (value, index, array) {\r\n    console.log(\"valeur: \", value);\r\n    console.log(\"index: \", index);\r\n    console.log(\"array: \", array);\r\n    console.log(\"\\n\");\r\n})"
+                "const fruits = [\"pomme\", \"banane\", \"orange\", \"cerise\", \"fraise\"];\n\n\nfruits.forEach(function (value, index, array) {\n    console.log(\"valeur: \", value);\n    console.log(\"index: \", index);\n    console.log(\"array: \", array);\n    console.log(\"\\n\");\n})"
             ],
             "outputs": []
         },
@@ -1312,7 +1312,7 @@
         {
             "language": "javascript",
             "source": [
-                "class MyClass {\r\n    \r\n    // Propriétés\r\n\r\n    // Méthodes\r\n}"
+                "class MyClass {\n    \n    // Propriétés\n\n    // Méthodes\n}"
             ],
             "outputs": []
         },
@@ -1333,7 +1333,7 @@
         {
             "language": "javascript",
             "source": [
-                "class Humain {\r\n\r\n    constructor(nom, age) {\r\n        this.nom = nom;\r\n        this.age = age;\r\n    }\r\n}"
+                "class Humain {\n\n    constructor(nom, age) {\n        this.nom = nom;\n        this.age = age;\n    }\n}"
             ],
             "outputs": []
         },
@@ -1347,7 +1347,7 @@
         {
             "language": "javascript",
             "source": [
-                "class Human {\r\n    constructor(name, age) {\r\n        this.name = name;\r\n        this.age = age;\r\n    }\r\n}\r\n\r\nconst john = new Human(\"john\", 16);\r\nconsole.log(john);"
+                "class Human {\n    constructor(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n}\n\nconst john = new Human(\"john\", 16);\nconsole.log(john);"
             ],
             "outputs": []
         },
@@ -1361,70 +1361,44 @@
         {
             "language": "javascript",
             "source": [
-                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.calcArea();\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+                "class Rectangle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n\n    calcArea() {\n        return this.height * this.width;\n    }\n}\n\nconst rectangle = new Rectangle(10, 5);\nconst area = rectangle.calcArea();\nconsole.log(`Area of the rectangle is: ${area}`);"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "class Rectangle {\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.calcArea();\r\n    }\r\n\r\n    calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+                "class Rectangle {\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n\n    get area() {\n        return this.calcArea();\n    }\n\n    calcArea() {\n        return this.height * this.width;\n    }\n}\n\nconst rectangle = new Rectangle(10, 5);\nconst area = rectangle.area;\nconsole.log(`Area of the rectangle is: ${area}`);"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "/**\r\n * A class used to generate a rectangle\r\n */\r\nclass Rectangle {\r\n    height;\r\n    width;\r\n\r\n    /**\r\n     * Constructor of the `Rectangle` class\r\n     * @param {Number} height The height of the rectangle\r\n     * @param {Number} width The width of the rectangle\r\n     */\r\n    constructor(height, width) {\r\n        this.height = height;\r\n        this.width = width;\r\n    }\r\n\r\n    get area() {\r\n        return this.#calcArea();\r\n    }\r\n\r\n    /**\r\n     * \r\n     * @returns returns the area of the rectangle\r\n     */\r\n    #calcArea() {\r\n        return this.height * this.width;\r\n    }\r\n}\r\n\r\nconst rectangle = new Rectangle(10, 5);\r\nconst area = rectangle.area;\r\nconsole.log(`Area of the rectangle is: ${area}`);"
+                "/**\n * A class used to generate a rectangle\n */\nclass Rectangle {\n    height;\n    width;\n\n    /**\n     * Constructor of the `Rectangle` class\n     * @param {Number} height The height of the rectangle\n     * @param {Number} width The width of the rectangle\n     */\n    constructor(height, width) {\n        this.height = height;\n        this.width = width;\n    }\n\n    get area() {\n        return this.#calcArea();\n    }\n\n    /**\n     * \n     * @returns returns the area of the rectangle\n     */\n    #calcArea() {\n        return this.height * this.width;\n    }\n}\n\nconst rectangle = new Rectangle(10, 5);\nconst area = rectangle.area;\nconsole.log(`Area of the rectangle is: ${area}`);"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "class ClassWithGetSet {\r\n    #msg = \"hello world\";\r\n    get msg() {\r\n        return this.#msg;\r\n    }\r\n    set msg(x) {\r\n        this.#msg = `hello ${x}`;\r\n    }\r\n}\r\n\r\nconst instance = new ClassWithGetSet();\r\nconsole.log(instance.msg); // \"hello world\"\r\n\r\ninstance.msg = \"cake\";\r\nconsole.log(instance.msg); // \"hello cake\"\r\n"
+                "class ClassWithGetSet {\n    #msg = \"hello world\";\n    get msg() {\n        return this.#msg;\n    }\n    set msg(x) {\n        this.#msg = `hello ${x}`;\n    }\n}\n\nconst instance = new ClassWithGetSet();\nconsole.log(instance.msg); // \"hello world\"\n\ninstance.msg = \"cake\";\nconsole.log(instance.msg); // \"hello cake\"\n"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "class Animal {\r\n    name;\r\n    constructor(name) {\r\n        this.name = name;\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} makes a noise.`);\r\n    }\r\n}\r\n\r\nclass Dog extends Animal {\r\n    constructor(name) {\r\n        super(name);\r\n    }\r\n\r\n    speak() {\r\n        console.log(`${this.name} barks.`);\r\n    }\r\n}\r\n\r\nconst dog = new Dog(\"Jack\");\r\ndog.speak();"
+                "class Animal {\n    name;\n    constructor(name) {\n        this.name = name;\n    }\n\n    speak() {\n        console.log(`${this.name} makes a noise.`);\n    }\n}\n\nclass Dog extends Animal {\n    constructor(name) {\n        super(name);\n    }\n\n    speak() {\n        console.log(`${this.name} barks.`);\n    }\n}\n\nconst dog = new Dog(\"Jack\");\ndog.speak();"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "Jack barks.",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "class Dice {\r\n    static roll(sides) {\r\n        return Math.floor(Math.random() * sides);\r\n    }\r\n}\r\n\r\nconst random = Dice.roll(6);\r\nconsole.log(random);"
+                "class Dice {\n    static roll(sides) {\n        return Math.floor(Math.random() * sides);\n    }\n}\n\nconst random = Dice.roll(6);\nconsole.log(random);"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "3",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -1457,7 +1431,7 @@
         {
             "language": "javascript",
             "source": [
-                "function createUser(name = \"john\", age = 24) {\r\n    return {\r\n        name,\r\n        age\r\n    }\r\n}\r\n\r\nconst user = createUser(\"Pierre\", 24);\r\nconst userDefault = createUser();\r\n\r\nconsole.log(user);\r\nconsole.log(userDefault);"
+                "function createUser(name = \"john\", age = 24) {\n    return {\n        name,\n        age\n    }\n}\n\nconst user = createUser(\"Pierre\", 24);\nconst userDefault = createUser();\n\nconsole.log(user);\nconsole.log(userDefault);"
             ],
             "outputs": []
         },
@@ -1478,7 +1452,7 @@
         {
             "language": "javascript",
             "source": [
-                "function doSomething(data = [], callback = function() {}) {\r\n    data.sort((a, b) => a - b);\r\n\r\n    callback(data);\r\n} "
+                "function doSomething(data = [], callback = function() {}) {\n    data.sort((a, b) => a - b);\n\n    callback(data);\n} "
             ],
             "outputs": []
         },
