@@ -8,7 +8,7 @@
 		"exercise": "node ./exercises/index.js",
 		"convert": "node ./utils/convert-nnb-to-md.js"
 	},
-	"author": "***REMOVED***",
+	"author": "spookicazt",
 	"license": "ISC",
 	"dependencies": {
 		"chalk": "^5.2.0",

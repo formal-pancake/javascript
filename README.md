@@ -12,7 +12,7 @@ ensuite, ouvrer le dans visual studio.
 ### Via le terminal:
 
 ```
-git clone https://github.com/***REMOVED***/javascript
+git clone https://github.com/spookicazt/javascript
 cd javascript
 code .
 ```

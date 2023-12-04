@@ -32,7 +32,7 @@
 ## Installation / Lancement
 
 ```bash
-git clone https://github.com/***REMOVED***/CEDEG
+git clone https://github.com/spookicazt/CEDEG
 cd CEDEG/javascript
 code .
 ```
