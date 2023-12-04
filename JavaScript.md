@@ -186,7 +186,7 @@ Parfait ! Maintenant, essayons de ~~doxxer~~ tout dire sur John.
 ```javascript
 let myName = "John"
 let myAge = 17;
-let address = "***REMOVED***";     // Oui, John habbite au McDo de ***REMOVED*** 
+let address = "Rue de Landre 52, 5172 Tannure";     // Oui, John habbite au McDo de Tannure 
 
 console.log("Bonjour, je m'appelle " + myName + ", J'ai " + myAge + " ans et j'habite à " + address);
 ```
@@ -196,7 +196,7 @@ Une autre façon d'obtenir le même résultat est d'utiliser **l'interpolation d
 ```javascript
 let myName = "John";
 let myAge = 17;
-let address = "***REMOVED***";
+let address = "Rue de Landre 52, 5172 Tannure";
 
 console.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);
 ```

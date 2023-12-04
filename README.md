@@ -15,7 +15,7 @@ fonctions.
 ### Via le terminal:
 
 ```
-git clone https://github.com/***REMOVED***/CEDEG
+git clone https://github.com/spookicazt/CEDEG
 cd CEDEG
 code ./javascript
 ```

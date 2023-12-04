@@ -1,17 +1,17 @@
 {
-  "name": "javascript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "exercise": "node ./exercises/index.js"
-  },
-  "author": "***REMOVED***",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "^5.2.0",
-    "inquirer": "^9.1.5",
-    "prompt-sync": "^4.2.0"
-  }
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"exercise": "node ./exercises/index.js"
+	},
+	"author": "spookicazt",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "^5.2.0",
+		"inquirer": "^9.1.5",
+		"prompt-sync": "^4.2.0"
+	}
 }

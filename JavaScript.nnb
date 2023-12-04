@@ -339,7 +339,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\"\r\nlet myAge = 17;\r\nlet address = \"***REMOVED***\";     // Oui, John habbite au McDo de ***REMOVED*** \r\n\r\nconsole.log(\"Bonjour, je m'appelle \" + myName + \", J'ai \" + myAge + \" ans et j'habite à \" + address);"
+                "let myName = \"John\"\r\nlet myAge = 17;\r\nlet address = \"Rue de Landre 52, 5172 Tannure\";     // Oui, John habbite au McDo de Tannure \r\n\r\nconsole.log(\"Bonjour, je m'appelle \" + myName + \", J'ai \" + myAge + \" ans et j'habite à \" + address);"
             ],
             "outputs": []
         },
@@ -353,7 +353,7 @@
         {
             "language": "javascript",
             "source": [
-                "let myName = \"John\";\r\nlet myAge = 17;\r\nlet address = \"***REMOVED***\";\r\n\r\nconsole.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);"
+                "let myName = \"John\";\r\nlet myAge = 17;\r\nlet address = \"Rue de Landre 52, 5172 Tannure\";\r\n\r\nconsole.log(`Bonjour, je m'appelle ${myName}, J'ai ${myAge} ans et j'habite à ${livesIn}`);"
             ],
             "outputs": []
         },
@@ -815,7 +815,7 @@
         {
             "language": "javascript",
             "source": [
-                "function Person(name, age, city) {\r\n    this.test = 24\r\n    this.name = name;\r\n    this.age = age;\r\n    this.city = city;\r\n    this.sePresenter = function() {\r\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\r\n    }\r\n}\r\n\r\nconst person = new Person(\"John\", 24, \"Gembloux\");\r\nconst person2 = new Person(\"Fred\", 18, \"***REMOVED***\");\r\n\r\nperson.sePresenter();\r\nperson2.sePresenter();\r\n"
+                "function Person(name, age, city) {\r\n    this.test = 24\r\n    this.name = name;\r\n    this.age = age;\r\n    this.city = city;\r\n    this.sePresenter = function() {\r\n        console.log(`Bonjour! Je suis ${this.name}, j'ai ${this.age} et j'habite a ${this.city}`);\r\n    }\r\n}\r\n\r\nconst person = new Person(\"John\", 24, \"Gembloux\");\r\nconst person2 = new Person(\"Fred\", 18, \"Tannure\");\r\n\r\nperson.sePresenter();\r\nperson2.sePresenter();\r\n"
             ],
             "outputs": []
         },
